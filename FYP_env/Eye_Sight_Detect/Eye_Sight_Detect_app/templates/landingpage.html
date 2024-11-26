@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Eye Sight Detect</title>
+        <link rel="icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="{% static 'css/lpstyle.css' %}" />
+    </head>
+
+    <body style="overflow: hidden;">
+        {% include "components/lpheader.html" %}
+        <main style="margin-top: 1px;" class="flex z-10 flex-col lg:-mt-20 justify-center items-center w-full flex-1">
+            <div class="lg:flex block container px-2 lg:py-0 sm:py-2 sm:pb-20 pb-10 lg:px-10 sm:mt-6 mt-4 mx-auto lg:min-h-screen items-center gap-2">
+                <div class="lg:w-[55%] w-full">
+                    <p class="xl:text-2xl lg:text-xl lg:text-start text-center sm:text-xl uppercase lg:mb-0 sm:mb-4 mb-2">
+                        Eye Sight AI Tool
+                    </p>
+                    <h1 class="xl:text-5xl lg:text-4xl sm:text-3xl text-2xl lg:text-left text-center font-extrabold text-gray-900 l:leading-[1.15] leading-[1.1]">
+                        Revolutionizing Eye Health with AI
+                    </h1>
+                    <ul class="flex flex-col xl:gap-3 lg:gap-2 justify-start items-start xl:text-xl lg:text-lg font-medium text-gray-700 xl:mt-8 lg:mt-5 sm:mt-4 mt-3 lg:p-0 sm:pl-10 pl-6">
+                        <li class="flex items-center gap-1">
+                            <span>
+                                <GrFormCheckmark class="text-4xl text-red-600" />
+                            </span> Cutting-edge Eye AI Technology
+                        </li>
+                        <li class="flex items-center gap-1">
+                            <span>
+                                <GrFormCheckmark class="text-4xl text-red-600" />
+                            </span> Access the Largest Fundus Dataset Library
+                        </li>
+                        <li class="flex items-center gap-1">
+                            <span>
+                                <GrFormCheckmark class="text-4xl text-red-600" />
+                            </span> Detect and Understand Eye Diseases through Deep Learning
+                        </li>
+                        <li class="flex items-center gap-1">
+                            <span>
+                                <GrFormCheckmark class="text-4xl text-red-600" />
+                            </span> AI Excellence for Winning Products and Top Performance
+                        </li>
+                    </ul>
+                    <p class="xl:mt-9 lg:mt-6 mt-8 lg:text-left text-center">
+                        Sign up for free today and experience the power of our Eye AI Tool. Instantly check your eye health
+                        from anywhere in the world. Join us in advancing eye care through cutting-edge technology.
+                    </p>
+                </div>
+                <div>
+                    <img class="w-full" alt="It's nice to be here" width="{500px}" height="{500px}" src="{% static 'img/lpimg.png' %}" />
+                </div>
+            </div>
+        </main>
+        <!-- <script>
+        const elements = document.querySelectorAll(".nav-link-child");
+        var acitvePage = window.location.href;
+        for (const element of elements) {
+            if (
+                acitvePage.includes("http://127.0.0.1:5500/dist/index.html") &&
+                element.classList.contains("home-link")
+            ) {
+                element.classList.add("active");
+            }
+        }
+    </script> -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
+
+    </body>
+
+</html>
